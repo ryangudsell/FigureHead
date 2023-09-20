@@ -1,0 +1,74 @@
+// --------------- Tablet Responsive
+@media only screen and (min-width: 768px) {
+// General
+
+// Header
+
+// Footer
+
+// Home Page
+
+// Profile Page
+#profile-page {
+    .profile {
+        padding: 20px 30px;
+    }
+
+    #profile-listings {
+        .card-content {
+            .listing-image {
+                height: 200px;
+            }
+        }
+    }
+}
+
+// Add and Edit Modals (Profile Page)
+.add-edit-modals {
+    form {
+        .category-div {
+            display: grid;
+            grid-template-columns: 200px 1fr 80px;
+        }
+        .input-div {
+            display: grid;
+            grid-template-columns: 200px 1fr 80px;
+            label {
+                text-align: right;
+            }
+            input, p, textarea, div {
+                width: 100%;
+            }
+            // flex-direction: row;
+            // justify-content: center;
+            // align-items: initial;
+            // width: 100%;
+            // gap: 5px;
+          }
+
+        .category-flex {
+            justify-content: flex-start;
+            width: 100%;
+            gap: 8px;
+            div {
+                gap: 2px;
+            }
+        }
+    }
+}
+
+// SingleProduct Page
+#product-page {
+    #product {
+      width: 60%;
+    }
+
+    #comment-flex {
+        .comment, .new-comment-inputs {
+            width: 60%;
+        }
+    }
+}
+// Payment Page
+
+}

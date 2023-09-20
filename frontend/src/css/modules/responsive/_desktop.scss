@@ -1,0 +1,109 @@
+// --------------- Desktop Responsive
+@media only screen and (min-width: 1024px) {    
+// General
+p {
+    font-size: $desktop-small-size;
+}
+
+.desktop {display: block;}
+.mobile {display: none!important;}
+// Header
+
+// Footer
+
+// Home Page
+
+// Profile Page
+#profile-page {
+
+    .profile {
+        padding: 30px 40px;
+    }
+    
+    #profile-listings {
+        padding: 15px 15px 20px;
+
+        .profile-card {
+            min-height: 350px;
+            width: 250px;
+
+            .card-content {
+                width: 100%;
+            }
+
+            .listing-title {font-size: $desktop-large-size;}
+
+            .listing-image {margin: 0 auto;}
+
+            .profile-listing-edit-delete {
+                font-size: $desktop-medium-size;
+
+                position: absolute;
+                bottom: 5px;
+                right: -5px;
+                * {
+                    margin-right: 15px;
+                }
+            }
+
+            #add-listing {
+                width: 100%;
+                font-size: $desktop-medium-size;
+    
+                #add-icon {
+                    font-size: 40px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+// SingleProduct Page
+#product-page {
+    #comment-flex {
+        .comment {
+            grid-template-columns: 25% 75%;
+        }
+    }
+}
+
+// Payment Page
+
+}
+
+@media only screen and (min-width: 1440px) {
+// General
+
+// Header
+
+// Footer
+
+// Home Page
+
+// Profile Page
+#profile-page {
+    
+    #profile-listings {
+
+        .profile-card {
+            min-height: 440px;
+            width: 330px;
+
+            .listing-image {
+                padding: 10px;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// SingleProduct Page
+
+// Payment Page
+
+}

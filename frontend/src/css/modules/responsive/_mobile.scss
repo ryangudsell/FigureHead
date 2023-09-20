@@ -1,0 +1,942 @@
+// --------------- Mobile Responsive
+// Breakpoint bookmark
+@media only screen and (min-width: 360px) {
+  .query {
+    padding: 0;
+  }
+}
+
+// General
+body {
+  background-image: linear-gradient(to right, $gradient-light, $gradient-dark);
+  color: $main-gold !important;
+  text-align: center;
+}
+* {font-family: $font;}
+
+p, a {font-size: $mobile-medium-size;}
+a {color: $main-gold !important;}
+
+.bg-image {
+  background-image: url("/img/bg-image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  margin-bottom: -150px;
+}
+
+.desktop {
+  display: none;
+}
+
+// Header / nav
+nav {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  #nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: $main-blue;
+    text-transform: uppercase;
+    width: 100%;
+
+    .fa-bars {
+      cursor: pointer;
+    }
+  }
+
+  #nav-bottom {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: $accent-blue;
+
+      .login-btn {
+        cursor: pointer;
+        background: none;
+        border: none;
+        text-transform: uppercase;
+        color: $main-gold;
+        font-weight: $bold-font;
+      }
+
+      .signup-btn {
+        margin-left: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        text-transform: uppercase;
+        color: $main-gold;
+        font-weight: $bold-font;
+      }
+
+      .profile-btn {
+        cursor: pointer;
+        background: none;
+        border: none;
+        text-transform: uppercase;
+        color: $main-gold;
+        font-weight: $bold-font;
+      }
+
+      .logout-btn {
+        margin-left: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        text-transform: uppercase;
+        color: $main-gold;
+        font-weight: $bold-font;
+      }
+  }
+
+  .nav-flex {
+
+    .nav-title {
+      margin-left: -30px;
+    }
+
+    .logo {
+      img {
+        width: 65px !important;
+        height: 65px !important;
+        margin-bottom: -65px;
+        overflow: visible;
+      }
+    }
+  }
+}
+
+// Footer
+footer {
+  #footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: $main-blue;
+    text-transform: uppercase;
+    width: 100%;
+
+    .brands {
+      padding: 5px;
+    }
+  }
+}
+
+// Home Page ---------------------------------------------------
+.background-desktop {
+  display: none;
+}
+.advert-container {
+  display: none;
+}
+.header-desktop {
+  display: none;
+}
+
+.mobile-advert-wrapper {
+  padding-top: 2em;
+  height: calc(710px - 2em);
+  background-image: url("/img/backgroundcoins.jpg");
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-hero-mobile {
+  img {
+    width: 180px;
+    margin-bottom: 30px;
+  }
+}
+
+.whats-new-title-mobile {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  width: 80%;
+  padding: 0.5rem 1rem;
+  background-color: $main-gold;
+  color: $main-blue;
+}
+.whats-new-mobile {
+  text-align: right;
+  width: 80%;
+  margin-bottom: 2rem;
+  color: $accent-gold;
+}
+
+.weekly-deal-title-mobile {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  width: 80%;
+  padding: 0.5rem 1rem;
+  background-color: $main-gold;
+  color: $main-blue;
+}
+
+.weekly-deal-mobile {
+  width: 80%;
+  text-align: right;
+  margin-bottom: 2rem;
+  color: $accent-gold;
+}
+
+.weekly-deal-info-two {
+  font-weight: $light-font;
+  font-style: italic;
+  color: $white;
+  letter-spacing: 1px;
+}
+
+.mobile-categories-wrapper {
+  padding-top: 30px;
+}
+
+.categories-container-mobile {
+  select { 
+    color: $main-gold;
+    font-weight: $bold-font;
+    font-size: $mobile-x-large-size;
+    // removing default styling
+    border: none;
+    background: none;
+    padding-right: 20px; /* Adjust the padding to make room for the custom arrow */
+    margin-bottom: 20px;
+  }
+
+}
+
+.btn-categories-title {
+  display: none;
+}
+
+.category-buttons-grid {
+  display: none;
+}
+
+.showing-item-list {
+  color: $accent-gold;
+  font-weight: $regular-font;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+
+
+  .product-item {
+    width: calc(50% - 10px); /* Display two cards in a row with some spacing */
+    padding: 10px;
+    background-color: $main-blue;
+    box-shadow: 4px 4px 20px $main-blue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    h3, p {
+      color: $accent-gold;
+      text-align: left;
+    }
+
+    .product-label-grid {
+      display: grid;
+      grid-template-columns: 1fr 12px;
+    }
+    
+    img {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.login-wrapper {
+  position: fixed;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  z-index: 10;
+
+  .login-container {
+    background-color: $main-blue;
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+    border: 5px $main-gold solid;
+
+    .close-btn {
+      float: right;
+      margin-right: 20px;
+      margin-top: 15px;
+      font-size: $mobile-x-large-size;
+      font-weight: $bold-font;
+      color: $accent-gold;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      margin-top: 30px;
+      margin-left: 40px;
+      margin-bottom: 30px;
+    }
+  
+    .login {
+
+      h4 {
+        float: left;
+        margin-left: 23px;
+        margin-bottom: 5px;
+        font-weight: $regular-font;
+      }
+
+      .email-input {
+        margin-bottom: 30px;
+      }
+
+      .password-input {
+        margin-bottom: 30px;
+      }
+
+      input {
+        width: 250px;
+        height: 27px;
+        border-radius: 15px;
+        padding-left: 10px;
+      }
+
+      ::placeholder {
+        opacity: 70%;
+      }
+
+      .error {
+        color: red;
+        margin-top: 10px;
+        font-weight: $bold-font;
+      }
+
+      .create-account-btn {
+        margin-bottom: 30px;
+        letter-spacing: 0.5px;
+
+        span {
+          text-decoration: underline;
+        }
+      }
+
+      .login-submit-btn {
+        width: 130px;
+        height: 30px;
+        text-transform: uppercase;
+        font-weight: $bold-font;
+        font-size: $mobile-x-large-size;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        background-color: $accent-gold;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.signup-wrapper {
+  position: fixed;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  z-index: 10;
+
+  .signup-container {
+    background-color: $main-blue;
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+    border: 5px $main-gold solid;
+
+    .close-btn {
+      float: right;
+      margin-right: 20px;
+      margin-top: 15px;
+      font-size: $mobile-x-large-size;
+      font-weight: $bold-font;
+      color: $accent-gold;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      margin-top: 30px;
+      margin-left: 40px;
+      margin-bottom: 30px;
+    }
+  
+    .signup {
+
+      h4 {
+        float: left;
+        margin-left: 23px;
+        margin-bottom: 5px;
+        font-weight: $regular-font;
+      }
+
+      .email-input {
+        margin-bottom: 30px;
+      }
+
+      .password-input {
+        margin-bottom: 30px;
+      }
+
+      input {
+        width: 250px;
+        height: 27px;
+        border-radius: 15px;
+        padding-left: 10px;
+      }
+
+      ::placeholder {
+        opacity: 70%;
+      }
+
+      .error {
+        color: red;
+        margin-top: 10px;
+        font-weight: $bold-font;
+      }
+
+      .login-account-btn {
+        margin-bottom: 30px;
+        letter-spacing: 0.5px;
+
+        span {
+          text-decoration: underline;
+        }
+      }
+
+      .signup-submit-btn {
+        width: 130px;
+        height: 30px;
+        text-transform: uppercase;
+        font-weight: $bold-font;
+        font-size: $mobile-x-large-size;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        background-color: $accent-gold;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.signup-container {
+  background-color: $main-blue;
+}
+
+// Profile Page
+#profile-page {
+
+  .profile-account-name {text-transform: uppercase;}
+  
+  .profile {
+    padding: 10px;
+
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    h1,
+    h2 {
+      padding: 10px;
+    }
+    h2 {
+      padding-bottom: 20px;
+    }
+  }
+
+  #profile-listings {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    padding: 5px;
+    row-gap: 10px;
+
+    .profile-card {
+      position: relative;
+      border: 4px solid $main-gold;
+      background-color: $main-blue;
+    }
+
+    .card-content {
+      min-height: 230px;
+      height: 100%;
+      width: 150px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      text-align: left;
+      padding: 5px 5px 10px;
+
+      .listing-image {
+        text-align: center;
+        overflow: hidden;
+        flex-grow: 1;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 10px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .listing-title {
+        margin-bottom: 10px;
+        font-size: $mobile-large-size;
+        font-weight: $bold-font;
+      }
+
+      .listing-price {
+        font-size: $mobile-x-large-size;
+      }
+
+      .listing-category {
+        text-transform: capitalize;
+      }
+    }
+
+    .profile-listing-edit-delete {
+      font-size: $mobile-large-size;
+
+      position: absolute;
+      bottom: 10px;
+      right: 0;
+      * {
+        margin-right: 10px;
+      }
+    }
+
+    #add-listing {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 5px;
+
+      #add-icon {
+        font-size: 28px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+// Add and Edit Modals (Profile Page)
+.add-edit-modals {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+
+  form {
+    width: 80%;
+    border: 2px solid $main-gold;
+    border-radius: 10px;
+    background-color: $main-blue;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .input-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+
+      input, p, div {width: 80%;}
+      textarea {width: 100%;}
+    }
+
+    .category-flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5px 8px;
+
+      padding: 5px;
+      margin: 0 auto;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+      }
+    }
+
+    .form-button {
+      border: none;
+      background-color: $main-gold;
+      border-radius: 10px;
+      padding: 10px 15px;
+      color: $black !important;
+      font-weight: $regular-font !important;
+
+      &.submit {
+        font-weight: $black-font !important;
+        border: 2px solid $black;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+// SingleProduct Page
+#product-page {
+  #product {
+    position: relative;
+    margin-top: 200px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "h2 h2" "details aside" "description description";
+    row-gap: 15px;
+
+    .product-img {
+      position: absolute;
+      top: -215px;
+      left: calc(50% - 62.5px);
+      z-index: 1;
+
+      padding: 5px;
+      background: $main-gold;
+      border-radius: 20px;
+
+      height: 200px;
+      width: 125px;
+      object-fit: cover;
+
+      &.main-img {
+        z-index: 2;
+      }
+
+      &.second-img {
+        left: calc(20% - 50px);
+        transform: rotate(-11.25deg);
+        height: 175px;
+        width: 111.25px;
+      }
+
+      &.third-img {
+        left: calc(77% - 50px);
+        transform: rotate(11.25deg);
+        height: 175px;
+        width: 111.25px;
+      }
+    }
+
+    h2 {
+      grid-area: h2;
+    }
+    .product-details {
+      grid-area: details;
+      text-align: left;
+      text-transform: capitalize;
+    }
+    .product-aside {
+      grid-area: aside;
+      text-align: right;
+
+      i.fa-heart {
+        margin-top: 5px;
+        margin-right: 20px;
+      }
+    }
+    .product-description {
+      grid-area: description;
+    }
+  }
+
+  #comment-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    padding: 5px;
+
+    .comment-header {
+      text-decoration: underline;
+      display: inline;
+      margin-right: 5px;
+    }
+
+    i {
+      font-size: $mobile-medium-size;
+    }
+
+    .new-comment-inputs {
+      width: 80%;
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 10px 20px;
+
+      background-color: $main-blue;
+      border-radius: 15px;
+
+      .new-comment-close {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+    }
+
+    .comment {
+      display: grid;
+      grid-template-columns: 100px calc(100% - 100px);
+      grid-template-rows: auto;
+
+      grid-template-areas: "author content" "edit content" "delete content";
+      width: 80%;
+
+      background-color: $main-blue;
+      border-radius: 15px;
+      padding-bottom: 10px;
+
+      .comment-author {
+        grid-area: author;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px 10px;
+
+        img {
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+        }
+      }
+      .comment-content {
+        grid-area: content;
+        text-align: left;
+        padding: 10px;
+        padding-left: 0;
+
+        &.edit-comment {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          padding: 15px;
+          padding-left: 25px;
+          .edit-comment-close {
+            position: absolute;
+            top: 10px;
+            left: 7px;
+          }
+        }
+      }
+
+      .comment-edit {grid-area: edit; margin-bottom: 5px;}
+      .comment-delete {grid-area: delete;}
+      .comment-edit p, .comment-delete p {
+        display: inline-block;
+        padding: 2px 10px;
+        background-color: $main-gold;
+        color: $main-blue;
+        border-radius: 5px;
+      }
+    }
+
+    .comment-button {
+      background-color: $main-gold;
+      color: $main-blue;
+
+      padding: 5px 10px;
+
+      border: none;
+      border-radius: 10px;
+    }
+  }
+
+  #mobile-buy-button {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    background-color: $main-blue;
+
+    div h2,
+    div p {
+      display: inline;
+    }
+
+    div h2 {
+      margin-right: 5px;
+    }
+  }
+
+  .buy-now-button {
+    border: 3px solid $black;
+    background-color: $main-gold;
+    border-radius: 15px;
+    padding: 10px 15px;
+
+    * {
+      color: $black !important;
+    }
+
+    h2 {
+      font-weight: $regular-font !important;
+    }
+
+    i {
+      margin-right: 10px;
+    }
+  }
+}
+
+// Payment Page
+
+@media screen and (min-width: 540px) {
+// General
+
+// Header
+
+// Footer
+
+// Home Page
+  .weekly-deal-info-two {
+    font-weight: $light-font;
+    font-style: italic;
+    color: $white;
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+  }
+
+  .product-item {
+    width: calc(30% - -5px) !important;
+  }
+
+// Profile Page
+#profile-page {
+  #profile-listings {
+    display: flex;
+    justify-content: center;
+    gap: 15px 30px;
+    .profile-card {
+      .card-content {
+        width: 180px;
+      }
+      #add-listing {
+        width: 180px;
+      }
+    }
+  }
+}
+
+// Profile Page
+
+// Add and Edit Modals (Profile Page)
+.add-edit-modals {
+  .category-flex {
+    width: 60%;
+  }
+}
+
+// SingleProduct Page
+#product-page {
+  #product {
+    width: 80%;
+    margin: 200px auto 0;
+
+    .product-img {
+      &.second-img {left: calc(50% - 150px);}
+      &.third-img {left: calc(50% + 40px);}
+    }
+  }
+
+  #comment-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    padding: 5px;
+
+    .comment-header {
+      text-decoration: underline;
+      display: inline;
+      margin-right: 5px;
+    }
+
+    i {
+      font-size: $mobile-medium-size;
+    }
+  }
+}
+
+// Payment Page
+
+}
